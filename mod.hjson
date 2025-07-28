@@ -9,4 +9,5 @@
   version: 8x4
   minGameVersion: 147
   subtitle: I love music
+  hidden: true
 }
