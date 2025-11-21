@@ -12,13 +12,16 @@ let seq = Vars.tree.loadMusic("seq"); //seq
 let game10 = Vars.tree.loadMusic("game10"); //fanmade
 let boss3 = Vars.tree.loadMusic("boss3"); //fanmade boss
 let fine2 = Vars.tree.loadMusic("fine2"); //ye
+let cosmos = Vars.tree.loadMusic("cosmos"); //ye
 
 Events.on(ClientLoadEvent, e => {
   Vars.control.sound.ambientMusic.add(day2);
   Vars.control.sound.ambientMusic.add(fine2);
+  Vars.control.sound.ambientMusic.add(cosmos);
   Vars.control.sound.darkMusic.add(day3);
   Vars.control.sound.darkMusic.add(day4);
   Vars.control.sound.darkMusic.add(game10);
+  Vars.control.sound.darkMusic.add(cosmos);
   Vars.control.sound.bossMusic.add(boss3);
   Vars.control.sound.bossMusic.add(seq); //duck it, seq is boss music
   Vars.control.sound.darkMusic.add(seq);
