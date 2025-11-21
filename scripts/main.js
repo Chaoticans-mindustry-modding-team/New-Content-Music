@@ -47,7 +47,7 @@ function callOnPlanetChange(pl) {
   };
 };
 let planet = null, planetCur = null;
-Events.on(Trigger.update, () => {
+Events.run(Trigger.update, () => {
   if(Vars.state.isMenu() || Vars.state.isEditor()) return;
   planetCur = Vars.state.getPlanet();
   if(planetCur != planet) callOnPlanetChange(planetCur);
