@@ -13,7 +13,6 @@ let game10 = Vars.tree.loadMusic("game10"); //fanmade
 let boss3 = Vars.tree.loadMusic("boss3"); //fanmade boss
 let fine2 = Vars.tree.loadMusic("fine2"); //ye
 let cosmos = Vars.tree.loadMusic("cosmos"); //ye
-let planet = null, planetCur = null;
 function clearMusic() {
   Vars.control.sound.ambientMusic = Seq.with();
   Vars.control.sound.darkMusic = Seq.with();
