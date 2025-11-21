@@ -18,9 +18,9 @@ function clearMusic() {
   Vars.control.sound.ambientMusic = Seq.with();
   Vars.control.sound.darkMusic = Seq.with();
   Vars.control.sound.bossMusic = Seq.with();
-}
+};
 function callOnPlanetChange(planet) {
-  switch(planet)
+  switch(planet) {
     case (Planets.serpulo):
     case (Planets.erekir):
         Vars.control.sound.reload();
@@ -45,6 +45,7 @@ function callOnPlanetChange(planet) {
         Vars.control.sound.darkMusic.add(seq);
         Vars.control.sound.bossMusic.add(seq);
         return;
+  };
 };
 let planet = null, planetCur = null;
 Events.on(Trigger.update, () => {
