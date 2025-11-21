@@ -34,7 +34,7 @@ function callOnPlanetChange(pl) {
         Vars.control.sound.bossMusic.add(seq); //duck it, seq is boss music
         Vars.control.sound.darkMusic.add(seq);
         return;
-      case(Vars.content.planet(newunits-clexon)):
+      case(Vars.content.planet("newunits-clexon")):
         clearMusic();
         Vars.control.sound.ambientMusic.add(cosmos);
         Vars.control.sound.ambientMusic.add(day3);
