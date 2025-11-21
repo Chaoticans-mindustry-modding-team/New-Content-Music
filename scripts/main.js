@@ -19,8 +19,8 @@ function clearMusic() {
   Vars.control.sound.darkMusic = Seq.with();
   Vars.control.sound.bossMusic = Seq.with();
 };
-function callOnPlanetChange(planet) {
-  switch(planet) {
+function callOnPlanetChange(pl) {
+  switch(pl) {
     case (Planets.serpulo):
     case (Planets.erekir):
         Vars.control.sound.reload();
